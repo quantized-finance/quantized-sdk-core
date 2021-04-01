@@ -1,25 +1,10 @@
-import JSBI from 'jsbi'
-
-// exports for external consumption
-export type BigintIsh = JSBI | string | number
-
-export enum ChainId {
-  MAINNET = 1,
-  ROPSTEN = 3,
-  RINKEBY = 4,
-  GÖRLI = 5,
-  KOVAN = 42
+export enum QuantizeType {
+  QUANTIZE,
+  QUANTIZE_ETH,
+  DEQUANTIZE,
+  DEQUANTIZE_ETH
 }
 
-export enum TradeType {
-  EXACT_INPUT,
-  EXACT_OUTPUT
-}
+export const FACTORY_ADDRESS = '0x1da48ae241B984C8BA795677616DCc13b93e4d60'
 
-export enum Rounding {
-  ROUND_DOWN,
-  ROUND_HALF_UP,
-  ROUND_UP
-}
-
-export const MaxUint256 = JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
+export const INIT_CODE_HASH = '0xfae899166b643caca96e31150882fba4e4f9081412d03b8c39cc844124b91e22'
